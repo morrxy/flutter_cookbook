@@ -3,6 +3,7 @@ import 'drawer_demo.dart' as demo2 show title, makePage;
 // import 'package_fonts.dart' as demo3 show title, makePage;
 import 'orientation_demo.dart' as demo4 show title, makePage;
 import 'tabs_demo.dart' as demo5 show title, makePage;
+import 'form_validation_demo.dart' as demo6 show title, makePage;
 
 final demoList = [
   {
@@ -20,5 +21,9 @@ final demoList = [
   {
     'name': demo5.title,
     'makePage': demo5.makePage
+  },
+  {
+    'name': demo6.title,
+    'makePage': demo6.makePage
   }
 ];
