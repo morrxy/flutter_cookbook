@@ -21,9 +21,9 @@ class _PageState extends State<Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text(widget.title),
-      // ),
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
       body: Center(
         child: AnimatedOpacity(
           opacity: _visible ? 1.0 : 0.0,
