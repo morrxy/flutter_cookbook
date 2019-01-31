@@ -10,6 +10,7 @@ import 'retrieve_input_demo.dart' as demo9 show title, makePage;
 import 'basic_list_demo.dart' as demo10 show title, makePage;
 import 'horizontal_list_demo.dart' as demo11 show title, makePage;
 import 'grid_list_demo.dart' as demo12 show title, makePage;
+import 'mixed_list_demo.dart' as demo13 show title, makePage;
 
 final demoList = [
   {
@@ -55,5 +56,9 @@ final demoList = [
   {
     'name': demo12.title,
     'makePage': demo12.makePage
+  },
+  {
+    'name': demo13.title,
+    'makePage': demo13.makePage
   }
 ];
