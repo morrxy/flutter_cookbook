@@ -29,6 +29,7 @@ class MyHome extends StatelessWidget {
                     title: Text(
                       demoList[i]['name'],
                     ),
+                    trailing: Icon(Icons.keyboard_arrow_right),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute<void>(
                           builder: (BuildContext context) {
