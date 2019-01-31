@@ -6,6 +6,7 @@ import 'tabs_demo.dart' as demo5 show title, makePage;
 import 'form_validation_demo.dart' as demo6 show title, makePage;
 import 'text_field_focus_demo.dart' as demo7 show title, makePage;
 import 'retrieve_text_input_demo.dart' as demo8 show title, makePage;
+import 'retrieve_input_demo.dart' as demo9 show title, makePage;
 
 final demoList = [
   {
@@ -35,5 +36,9 @@ final demoList = [
   {
     'name': demo8.title,
     'makePage': demo8.makePage
+  },
+  {
+    'name': demo9.title,
+    'makePage': demo9.makePage
   }
 ];
