@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'src/demo_list.dart' show demoList;
 
-main() => runApp(MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -21,26 +21,45 @@ class MyHome extends StatelessWidget {
         ),
         body: ListView.builder(
           padding: const EdgeInsets.all(16.0),
+          itemCount: demoList.length,
           itemBuilder: (context, i) {
-            if (i < demoList.length) {
-              return Column(
-                children: <Widget>[
-                  ListTile(
-                    title: Text(
-                      demoList[i]['name'],
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute<void>(
-                          builder: (BuildContext context) {
-                        return DemoPage(demoList[i]['makePage']);
-                      }));
-                    },
+            return Column(
+              children: <Widget>[
+                ListTile(
+                  title: Text(
+                    demoList[i]['name'],
+                    style: Theme.of(context).textTheme.headline,
                   ),
-                  Divider()
-                ],
-              );
-            }
+                ),
+                Divider(),
+                ListView.builder(
+                  shrinkWrap: true,
+                  physics: ClampingScrollPhysics(),
+                  itemCount: demoList[i]['list'].length,
+                  itemBuilder: (context, index) {
+                    return Column(
+                      children: <Widget>[
+                        ListTile(
+                          title: Text(
+                            demoList[i]['list'][index]['name'],
+                            // style: Theme.of(context).textTheme.body1,
+                          ),
+                          trailing: Icon(Icons.keyboard_arrow_right),
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute<void>(
+                                builder: (BuildContext context) {
+                              return DemoPage(
+                                  demoList[i]['list'][index]['makePage']);
+                            }));
+                          },
+                        ),
+                        Divider(),
+                      ],
+                    );
+                  },
+                ),
+              ],
+            );
           },
         ));
   }
