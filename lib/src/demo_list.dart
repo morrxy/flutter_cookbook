@@ -12,6 +12,7 @@ import 'horizontal_list_demo.dart' as demo11 show title, makePage;
 import 'grid_list_demo.dart' as demo12 show title, makePage;
 import 'mixed_list_demo.dart' as demo13 show title, makePage;
 import 'snackbar_demo.dart' as demo14 show title, makePage;
+import 'long_list_demo.dart' as demo15 show title, makePage;
 
 final List<Map<String, dynamic>> demoList = [
   {
@@ -44,7 +45,8 @@ final List<Map<String, dynamic>> demoList = [
       {'name': demo10.title, 'makePage': demo10.makePage},
       {'name': demo11.title, 'makePage': demo11.makePage},
       {'name': demo12.title, 'makePage': demo12.makePage},
-      {'name': demo13.title, 'makePage': demo13.makePage}
+      {'name': demo13.title, 'makePage': demo13.makePage},
+      {'name': demo15.title, 'makePage': demo15.makePage},
     ]
   },
 ];
