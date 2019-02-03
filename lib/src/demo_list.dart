@@ -13,6 +13,9 @@ import 'grid_list_demo.dart' as demo12 show title, makePage;
 import 'mixed_list_demo.dart' as demo13 show title, makePage;
 import 'snackbar_demo.dart' as demo14 show title, makePage;
 import 'long_list_demo.dart' as demo15 show title, makePage;
+import 'web_images_demo.dart' as demo16 show title, makePage;
+import 'fade_in_images_in_memory.dart' as demo17 show title, makePage;
+import 'fade_in_images_local.dart' as demo18 show title, makePage;
 
 final List<Map<String, dynamic>> demoList = [
   {
@@ -37,6 +40,14 @@ final List<Map<String, dynamic>> demoList = [
       {'name': demo7.title, 'makePage': demo7.makePage},
       {'name': demo8.title, 'makePage': demo8.makePage},
       {'name': demo9.title, 'makePage': demo9.makePage},
+    ]
+  },
+  {
+    'name': 'Images',
+    'list': [
+      {'name': demo16.title, 'makePage': demo16.makePage},
+      {'name': demo17.title, 'makePage': demo17.makePage},
+      {'name': demo18.title, 'makePage': demo18.makePage},
     ]
   },
   {
