@@ -16,6 +16,7 @@ import 'long_list_demo.dart' as demo15 show title, makePage;
 import 'web_images_demo.dart' as demo16 show title, makePage;
 import 'fade_in_images_in_memory.dart' as demo17 show title, makePage;
 import 'fade_in_images_local.dart' as demo18 show title, makePage;
+import 'cached_images_demo.dart' as demo19 show title, makePage;
 
 final List<Map<String, dynamic>> demoList = [
   {
@@ -48,6 +49,7 @@ final List<Map<String, dynamic>> demoList = [
       {'name': demo16.title, 'makePage': demo16.makePage},
       {'name': demo17.title, 'makePage': demo17.makePage},
       {'name': demo18.title, 'makePage': demo18.makePage},
+      {'name': demo19.title, 'makePage': demo19.makePage},
     ]
   },
   {
