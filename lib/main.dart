@@ -42,7 +42,6 @@ class MyHome extends StatelessWidget {
                         ListTile(
                           title: Text(
                             demoList[i]['list'][index]['name'],
-                            // style: Theme.of(context).textTheme.body1,
                           ),
                           trailing: Icon(Icons.keyboard_arrow_right),
                           onTap: () {
