@@ -20,6 +20,7 @@ import 'cached_images_demo.dart' as demo19 show title, makePage;
 import 'inkwell_demo.dart' as demo20 show title, makePage;
 import 'gesture_demo.dart' as demo21 show title, makePage;
 import 'dismissing_items_demo.dart' as demo22 show title, makePage;
+import 'navigation_basics_demo.dart' as demo23 show title, makePage;
 
 final List<Map<String, dynamic>> demoList = [
   {
@@ -71,6 +72,12 @@ final List<Map<String, dynamic>> demoList = [
       {'name': demo12.title, 'makePage': demo12.makePage},
       {'name': demo13.title, 'makePage': demo13.makePage},
       {'name': demo15.title, 'makePage': demo15.makePage},
+    ]
+  },
+  {
+    'name': 'Navigation',
+    'list': [
+      {'name': demo23.title, 'makePage': demo23.makePage},
     ]
   },
 ];
