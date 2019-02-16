@@ -24,6 +24,7 @@ import 'navigation_basics_demo.dart' as demo23 show title, makePage;
 import 'passing_data_demo.dart' as demo24 show title, makePage;
 import 'returning_data_demo.dart' as demo25 show title, makePage;
 import 'transition_demo.dart' as demo26 show title, makePage;
+import 'fetch_data_demo.dart' as demo27 show title, makePage;
 
 final List<Map<String, dynamic>> demoList = [
   {
@@ -84,6 +85,12 @@ final List<Map<String, dynamic>> demoList = [
       {'name': demo24.title, 'makePage': demo24.makePage},
       {'name': demo25.title, 'makePage': demo25.makePage},
       {'name': demo26.title, 'makePage': demo26.makePage},
+    ]
+  },
+  {
+    'name': 'Networking',
+    'list': [
+      {'name': demo27.title, 'makePage': demo27.makePage},
     ]
   },
 ];
