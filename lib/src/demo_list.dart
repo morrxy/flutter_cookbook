@@ -25,6 +25,7 @@ import 'passing_data_demo.dart' as demo24 show title, makePage;
 import 'returning_data_demo.dart' as demo25 show title, makePage;
 import 'transition_demo.dart' as demo26 show title, makePage;
 import 'fetch_data_demo.dart' as demo27 show title, makePage;
+import 'isolate_demo.dart' as demo28 show title, makePage;
 
 final List<Map<String, dynamic>> demoList = [
   {
@@ -91,6 +92,7 @@ final List<Map<String, dynamic>> demoList = [
     'name': 'Networking',
     'list': [
       {'name': demo27.title, 'makePage': demo27.makePage},
+      {'name': demo28.title, 'makePage': demo28.makePage},
     ]
   },
 ];
